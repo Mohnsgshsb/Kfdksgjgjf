@@ -22,17 +22,17 @@ header() {
     clear_screen
     echo -e "${B}┌──────────────────────────────────────────────┐${N}"
     echo -e "${B}│${W}              NEBULA INSTALLER                ${B}│${N}"
-    echo -e "${B}│${C}           Powered By Terbo              ${B}│${N}"
+    echo -e "${B}│${C}           Powered By F Projects              ${B}│${N}"
     echo -e "${B}└──────────────────────────────────────────────┘${N}"
-    echo -e " ${G}Discord:${N} https://discord.gg/xeGsPhk9b"
-    echo -e " ${B}Telegram:${N} t.me/ffooxxo"
+    echo -e " ${G}WhatsApp:${N} https://whatsapp.com/channel/0029Vb6Jjyf8KMqtrGJZJy0y"
+    echo -e " ${B}Telegram:${N} t.me/FikXzXmodsTzy"
     echo -e "${B}────────────────────────────────────────────────${N}"
     echo ""
 }
 
 check_root() {
     if [[ $EUID -ne 0 ]]; then
-        echo -e "${R}[🩸] من فضلك استخدم أمر : sudo su ${N}"
+        echo -e "${R}[!] Harap jalankan dengan sudo/root${N}"
         exit 1
     fi
 }
@@ -124,7 +124,7 @@ install_nebula() {
     fi
 
     echo -e "\n${G}[✓] Nebula Installed.${N}"
-    read -n 1 -s -r -p "press Enter "
+    read -n 1 -s -r -p "Tekan Enter untuk kembali..."
 }
 
 check_root
@@ -141,7 +141,7 @@ while true; do
     case $opt in
         1) install_blueprint ;;
         2) install_nebula ;;
-        3) echo -e "\n${G}Bye ya bro${N}"; exit 0 ;;
-        *) echo -e "\n${R}Fuck you${N}"; sleep 1 ;;
+        3) echo -e "\n${G}Good Bye.${N}"; exit 0 ;;
+        *) echo -e "\n${R}Invalid Option${N}"; sleep 1 ;;
     esac
 done
