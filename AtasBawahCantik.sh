@@ -3,7 +3,7 @@
 # Powered By F Projects
 
 PTERO="/var/www/pterodactyl"
-RAW_LINK="https://github.com/FikXzModzDeveloper/Nebula-Theme-pterodactyl/raw/main/nebula.blueprint"
+RAW_LINK="https://github.com/Mohnsgshsb/Kfdksgjgjf/raw/main/nebula.blueprint"
 
 # ANSI Colors
 R='\033[0;31m'
